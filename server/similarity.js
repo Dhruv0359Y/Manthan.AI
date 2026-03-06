@@ -9,5 +9,5 @@ export function cosineSimilarity(vecA, vecB) {
     normB += vecB[i] ** 2;
   }
 
-  return dot / (Math.sqrt(normA) * Math.sqrt(normB));
+  return dot/(Math.sqrt(normA) * Math.sqrt(normB));
 }
