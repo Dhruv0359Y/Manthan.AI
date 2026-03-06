@@ -1,5 +1,4 @@
-import { qdrant, COLLECTION } from "./vector.service.js"; // ✅ shared collection
-
+import { qdrant, COLLECTION } from "./vector.service.js"; //
 export async function forgetOldMemories(userId, maxMemories = 300) {
   const response = await qdrant.scroll(COLLECTION, {
     filter: {

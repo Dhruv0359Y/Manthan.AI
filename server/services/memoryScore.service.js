@@ -1,7 +1,13 @@
 export function scoreMemory(text) {
-  if (text.length < 20) return 2;
-  const keywords = [
+  const t = text.toLowerCase();
+
+  if (t.length < 20) return 2;
+
+  if (t.length > 120) return 7;
+
+  const strongSignals = [
     "i am",
+    "my name",
     "i live",
     "my goal",
     "i want",
@@ -10,7 +16,14 @@ export function scoreMemory(text) {
     "my project",
     "working on",
     "preparing for",
+    "remember",
+    "prefer",
+    "always",
+    "never",
+    "favorite",
   ];
-  const match = keywords.some((k) => text.toLowerCase().includes(k)); // ✅ fixed typo
+
+  const match = strongSignals.some((k) => t.includes(k));
+
   return match ? 8 : 5;
 }
