@@ -6,7 +6,7 @@ const client = new GoogleGenerativeAI(process.env.OPENAI_API_KEY);
 export async function generateResponse(
   prompt,
   model = "gemini",
-  maxTokens = 300,
+  maxTokens = 3000,
 ) {
   if (model === "local") {
     const response = await ollama.chat({

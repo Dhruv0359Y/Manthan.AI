@@ -115,7 +115,7 @@ export async function quickResearch(
           (r) =>
             `Previous research on "${r.query}" (${r.mode} mode):\n${r.report.slice(
               0,
-              400,
+              1400,
             )}`,
         )
         .join("\n\n")
@@ -180,7 +180,7 @@ export async function deepResearch(
           (r) =>
             `Previous research on "${r.query}" (${r.mode} mode):\n${r.report.slice(
               0,
-              400,
+              1400,
             )}`,
         )
         .join("\n\n")
