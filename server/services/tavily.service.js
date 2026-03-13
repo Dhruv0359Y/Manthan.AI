@@ -31,6 +31,6 @@ export async function tavilySearch(query, depth = "basic") {
     };
   } catch (err) {
     console.error("Tavily search failed:", err.message);
-    retur { answer: null, results: [] };
+    return { answer: null, results: [] };
   }
 }
