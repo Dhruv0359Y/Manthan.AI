@@ -33,7 +33,7 @@ export function buildUsageSummary(query, reply, mode, latency) {
   return {
     mode,
     latency: `${(latency / 1000).toFixed(2)}s`,
-    latencyOk: mode === "quick" ? latency < 120000 : latency < 600000, // 2min / 10min
+    latencyOk: mode === "quick"  latency < 120000 : latency < 600000, // 2min / 10min
     ...cost,
   };
 }
