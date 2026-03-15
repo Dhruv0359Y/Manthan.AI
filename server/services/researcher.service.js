@@ -10,7 +10,7 @@ dotenv.config();
 
 const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-/* ---------------- URL TYPE DETECTION ---------------- */
+/* ---------------- URL TYPE DETECTION ---------------- *
 
 function detectLinkType(url) {
   if (url.includes("github.com")) return "github";
