@@ -6,7 +6,7 @@ Manthan.AI is a production-grade AI research agent that thinks like a **senior r
 
 ---
 
-## ✨ What Makes Manthan.AI Different
+## ✨ What Make Manthan.AI Different
 
 Most AI assistants forget you the moment the conversation ends. Manthan.AI doesn't.
 
